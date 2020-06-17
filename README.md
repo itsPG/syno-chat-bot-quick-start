@@ -2,10 +2,13 @@
 
 ## Quick Start Guide
 
-### clone this porject
+### clone this porject and install dependency
 
 ```
 git clone https://github.com/itsPG/syno-chat-bot-quick-start
+cd syno-chat-bot-quick-start
+yarn install
+cd ..
 ```
 
 ### add server.crt / server.key to cert folder
@@ -15,7 +18,12 @@ if you don't have a valid certificate, you may generate a self-signed certificat
 ```
 cd syno-chat-bot-quick-start/cert
 openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout server.key -out server.crt -days 30
+cd ../../
 ```
+
+however, you *MUST* have a valid certificate in order to be connected by Chat Server
+
+please consider getting a free one from https://letsencrypt.org/
 
 ### fill config in index.js
 
