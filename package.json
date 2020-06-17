@@ -1,0 +1,9 @@
+{
+  "name": "syno-chat-bot-quick-start",
+  "version": "1.0.0",
+  "author": "PG Tsai",
+  "license": "MIT",
+  "dependencies": {
+    "syno-chat-bot": "^1.0.0"
+  }
+}
